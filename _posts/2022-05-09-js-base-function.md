@@ -31,7 +31,7 @@ tags:
 
 아래 코드에서 `sum` 은 함수의 이름, `number` 은 매개변수 (parameter), `return (number + 5) `는 함수를 정의하는 표현이라고 할 수 있다.
 
-```
+```js
 function sum(number) { 
 	return (number + 5);
 }
@@ -41,7 +41,7 @@ function sum(number) {
 
 우리가 f (x)의 값을 구하기 이해서는 f (3) 가 같이 사용한다. 함수도 똑같다. 함수를 불러와서 사용하고싶다면 `함수이름 (인자)` 로 사용해보자.
 
-```
+```js
 function sum(number) { 
 	return (number + 5);
 }
