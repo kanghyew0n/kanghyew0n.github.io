@@ -39,7 +39,7 @@ tags:
 
 새롭게 `div element` 를 생성하고 변수에 할당한다. 이때 변화가 없어 보이지만 현재 `div` 를 생성하고 DOM 트리에 연결을 안했기 때문에 그렇다. 이를 연결하기 위해 APPEND 해야한다. 
 
-```
+```js
 document.createElement('div') 
 const nameDiv = document.createElement('div') 
 ```
@@ -50,7 +50,7 @@ const nameDiv = document.createElement('div')
 
 `append`라는 메서드를 사용하여 변수를 `<body>` 에 넣어준다. `<div>` 요소에 아무 내용도 없어서 아무것도 보이지 않는다.
 
-```
+```js
 document.body.append(nameDiv)
 ```
 
@@ -60,14 +60,14 @@ document.body.append(nameDiv)
 
 자바스크립트에서 원시자료형에서 변수의 값을 찾기 위해 변수 명을 조회하고, 참조 자료형에서 배열은 index를 객체는 key를 이용하여 값을 조회할 수 있다. 하지만 DOM으로 HTML 엘리먼트의 정보를 조회하기 위해서는 `querySelector` 의 첫번째 인자로 셀렉터(selector)를 전달하여 확인할 수 있다. 여러 개의 요소를 한 번에 가져오기 위해서는, `querySelectorAll` 을 사용한다. 
 
-```
+```js
 const firstNameDiv = document.querySelector('.nameDiv') // 첫번째 element를 반환 
 const nameDivs = document.querySelectorAll('.nameDiv') // 전달 선택자와 일치하는 모든 element 반환
 ```
 
 이런 것도 있다고 알아만 두자 
 
-```
+```js
 const 변수명1 = document.getElementById(container)
 const 변수명2 = document.querySelector('#container')
 console.log(변수명1 === 변수명2) // true
@@ -81,7 +81,7 @@ console.log(변수명1 === 변수명2) // true
 
 * **textContnet**
 
-```
+```js
 nameDiv.textContent = 'kanghyew0n';
 console.log(oneDiv) // <div>kanghyew0n</div>
 ```
@@ -98,7 +98,7 @@ console.log(oneDiv) // <div>kanghyew0n</div>
 
 요소의 속성값을 정한다. 밑에 예시에서는 `nameDiv` 의 `id` 를 `myName` 으로 정해준다. 
 
-```
+```js
 element.setAttribute('attributename', 'attributevalue')
 element.removeAttribute(attributename)
 
@@ -109,7 +109,7 @@ nameDiv.setAttribute('id', 'myName') // id="myName"
 
 `classList.add`를 이용하여 클래스를 추가한다.  
 
-```
+```js
 nameDiv.classList.add('nameDiv');	// class="nameDiv"
 console.log(nameDiv) // <div class="nameDiv">kanghyew0n</div>
 ```
@@ -120,7 +120,7 @@ console.log(nameDiv) // <div class="nameDiv">kanghyew0n</div>
 
 * 삭제하려는 요소의 위치를 알고 있는 경우에 `remove` 메서드를 사용하여 삭제한다. 
 
-```
+```js
 const container = document.querySelector('#container')
 const nameDiv = document.createElement('div')
 container.append(nameDiv)
@@ -129,13 +129,13 @@ nameDiv.remove() // append 했던 요소를 삭제할 수 있음
 
 * 컨테이너의 모든 자식요소를 제거하려면 
 
-```
+```js
 document.querySelector('#container').innerHTML = '';
 ```
 
 * `removeChild` 는 자식 요소를 지정해서 삭제하는 메서드이다. 모든 자식 요소를 삭제하기 위해, 반복문(while, for, etc.)을 활용할 수 있다. 다음의 코드는 자식 요소가 남아있지 않을 때까지, 첫 번째 자식 요소를 삭제하는 코드이다. container의 첫 번째 자식 요소가 존재하면, 첫 번째 자식 요소를 제거한다. 
 
-```
+```js
 const container = document.querySelector('#container');
 while (container.firstChild) {
   container.removeChild(container.firstChild);
@@ -144,7 +144,7 @@ while (container.firstChild) {
 
 * 클래스 명이 같은 모든 요소를 삭제하기 위해서는 `querySelectorAll` 로 모든 요소를 선택하여 `nameDivs` 에 담아주고  클래스 이름이 nameDiv 인 요소만 찾아 제거한다.
 
-```
+```js
 const nameDivs = document.querySelectorAll('.nameDiv');
 nameDivs.forEach((nameDiv) => nameDiv.remove());
 ```
