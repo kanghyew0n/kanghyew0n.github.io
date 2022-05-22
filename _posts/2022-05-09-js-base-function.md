@@ -19,7 +19,7 @@ tags:
 >
 > f (3) = 8 이라는 값이 나오게 된다. 이 원리를 기억하고 함수를 배워보자! 
 
-<br/><br/><br/>
+<br/>
 
 #### 함수의 선언 
 
@@ -49,4 +49,4 @@ function sum(number) {
 console.log(sum(3)); //8
 ```
 
-<br/><br/><br/>
+<br/>
