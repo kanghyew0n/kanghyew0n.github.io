@@ -11,7 +11,7 @@ tags:
 
 
 
-##### 시작하면서 
+**시작하면서** 
 
 프로젝트를 진행하면 버전관리가 필요하게 된다. 프로젝트가 진행될수록 최종 파일, 최근 파일이 무엇인지 분간이 어렵기 때문이다. 프로젝트를 한 번 해보면 알게된다... 최종.zip, 진짜최종.zip, 이게진짜최종!!!.zip,,,,,
 
@@ -77,7 +77,6 @@ git config --list // 등록한 후 확인 가능
 ssh 등록하면 username과 password를 입력하지 않고 git과 인터렉션 할 수 있다 라고 하는데 ( [참고한 블로그](https://devocean.sk.com/blog/techBoardDetail.do?ID=163311) ) 저도 등록을 했습니다만 매번 username과 password를 입력합니다..
 
 아 그리고 ssh 키를 등록하지 않으면 `git permission denied (publickey)` 라는 허가거부 에러를 받을 수 있다는 점 
-
 
 
 <u>**! 번외 **</u>) 
