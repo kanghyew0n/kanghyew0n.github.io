@@ -100,7 +100,7 @@ ssh 등록하면 username과 password를 입력하지 않고 git과 인터렉션
 
 상단 `repositories` 를 선택하고 초록색 `New` 버튼을 클릭하면 아래와 같은 화면이 나온다. (만약 블로그를 만들 것이라면 다음편에서,, )
 
-![image-20220522185035715](../images/2022-05-22-github-base/image-20220522185035715.png)
+![image-20220522185035715](../assets/images/2022-05-22-github-base/image-20220522185035715.png)
 
 
 
@@ -116,7 +116,7 @@ git remote add origin https://github.com/~
 
 `remote add origin 주소`  에서 주소는 밑에 사진에서 `code` 를 클릭하고 나오는 창에서 복사해온다!
 
-![image-20220522185911402](../images/2022-05-22-github-base/image-20220522185911402.png)
+![image-20220522185911402](../assets/images/2022-05-22-github-base/image-20220522185911402.png)
 
 #### 6. 로컬에 있는 파일 repository 에 push
 
@@ -141,8 +141,8 @@ git push origin main (혹은 master) //push 해준다! 이때 username 과 passw
 
 위의 과정이 완료됐다면 자신의 repository로 가보자 , 그럼 아래 사진처럼 나와있을텐데 저 초록색 버튼을 클릭하자!
 
-![image-20220522192032141](../images/2022-05-22-github-base/image-20220522192032141.png)
+![image-20220522192032141](../assets/images/2022-05-22-github-base/image-20220522192032141.png)
 
 그 다음 계속해서 초록색 버튼을 눌러주면 보라색으로 바뀐다. 그럼 성공! 다시 <> 코드 메뉴로 돌아가보면 아래 사진처럼 되어있을텐데 저 노란색 동그라미가 초록색 체크로 변하면 완료!
 
-![image-20220522192318232](../images/2022-05-22-github-base/image-20220522192318232.png)
+![image-20220522192318232](../assets/images/2022-05-22-github-base/image-20220522192318232.png)
