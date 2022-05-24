@@ -84,7 +84,7 @@ The size of the indent can also be customized by changing the value of `$indent-
 
 ### Font stacks
 
-By default the theme uses [system fonts](https://medium.com/designing-medium/system-shock-6b1dc6d6596f#.rb81vgn7i) for all of the font stacks (serif, sans-serif, and ). This is done in part to provide a clean base for you to build off of and to improve performance since we aren't loading any custom webfonts by default.
+By default the theme uses [system fonts](https://medium.com/designing-medium/system-shock-6b1dc6d6596f#.rb81vgn7i) for all of the font stacks (serif, sans-serif, and monospace). This is done in part to provide a clean base for you to build off of and to improve performance since we aren't loading any custom webfonts by default.
 
 ```scss
 /* system typefaces */
