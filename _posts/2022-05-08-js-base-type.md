@@ -9,9 +9,11 @@ tags:
 
 ---
 
+
+
 ### 2. 타입 (type)
 
-JavaScript 언어의 타입은 원시 값과 객체로 나뉜다고 한다. 원시값의 종류는 아래와 같다. (BigInt, Symbol은 다음 기회에..)<br/>
+JavaScript 언어의 타입은 원시 값과 객체로 나뉜다고 한다. 원시값의 종류는 아래와 같다. (BigInt, Symbol은 다음 기회에..내가 아직 잘 모릅니다)<br/>
 
 - Number 타입 
 - String 타입
@@ -21,7 +23,7 @@ JavaScript 언어의 타입은 원시 값과 객체로 나뉜다고 한다. 원�
 - BigInt 타입
 - Symbol 타입
 
-<br/>
+
 
 #### Number  타입 
 
@@ -36,7 +38,7 @@ Infinity
 -Infinity
 ```
 
-<br/>
+
 
 #### String  타입 
 
@@ -67,7 +69,7 @@ let str = 'hello'
 console.log(str.length) // 5
 ```
 
-<br/>
+
 
 #### Boolean 타입 
 
@@ -111,13 +113,13 @@ if (NaN)
 if ("")
 ```
 
-<br/>
+
 
 #### Null 타입 
 
 Null 타입은 `null` 하나의 값만 가질 수 있다. `null`은 **의도적으로 변수에 값이 없다는 것을 명시**할 때 사용한다. `null`은 글로벌 객체의 속성에 대한 식별자가 아니다. 대신 `null`은 식별되지 않은 것을 표현한다. 즉, 변수가 아무런 객체를 가리키지 않음을 표현합니다. 또한 JavaScript는 대소문자를 구별하므로 null은 Null,NULL 등과 다르다. 
 
-<br/>
+
 
 #### Undefined 타입 
 
@@ -145,4 +147,4 @@ console.log(x) // undefined
 
   
 
-<br/><br/><br/>
+<br/>
