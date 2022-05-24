@@ -108,12 +108,9 @@ console.log(num * 9)
 
 num = 2;
 ```
+<br/>
 
-
-
-
-
-##### <u>여기서 잠깐!</u>
+**<u>여기서 잠깐!</u>**
 
 변수를 선언하는 방법에는`var` , `let` , `const`   3가지가 있다.  
 
@@ -126,8 +123,7 @@ console.log(age);
 
 var age;
 ```
-
-
+<br/>
 
 또한 변수의 중복 선언도 허용한다. 아래 예시를 보면 변수를 다른 값으로 중복 선언했지만 에러가 나지 않고 다른 값이 잘 출력되는 것을 볼 수 있다. 한마디로 재선언이 가능하여 코드량이 많아질 경우 파악이 힘들어 사용하기 어렵다. 이를 보완하기 위해 나온 것이 `let` 과 `const` 이다. 아래와 같은 코드를 출력했을 때 `let` 과 `const` 는 에러 메세지가 나온다. 
 
@@ -139,7 +135,7 @@ var yourName = 'wonhyekang'
 console.log(name) // wonhyekang
 ```
 
-
+<br/>
 
 `let` 과 `const` 는 재선언이 불가능하다. 그렇다면 둘의 차이점은?
 
@@ -155,6 +151,7 @@ console.log(name) // 에러메세지-> 재선언
 yourName = 'wonhyekang'
 console.log(name) //wonhyekang -> 재할당 
 ```
+<br/>
 
 ```js
 function letTest() {
@@ -168,8 +165,9 @@ function letTest() {
 ```
 
 
-
+<br/>
 그렇다면 `const` 는? 블록 범위의 상수를 선언한다. 상수의 값은 재할당할 수 없으며 다시 선언할 수도 없다. 
+
 
 ```js
 const yourName = 'kanghyewon'
@@ -181,16 +179,17 @@ console.log(name) // 에러메세지-> 재선언
 yourName = 'wonhyekang'
 console.log(name) //에러메세지 -> 재할당 
 ```
+<br/>
 
 
+|                     |     재선언     |     재할당     |
+| :-----------------: | :-----------: | :-----------: |
+|  **var**            |       O       |       O       |
+|  **let**            |       X       |       O       |
+| **const**           |       X       |       X       |
 
-|           | 재선언 | 재할당 |
-| :-------: | :----: | :----: |
-|  **var**  |   O    |   O    |
-|  **let**  |   X    |   O    |
-| **const** |   X    |   X    |
-
-
+<br/>
+<br/>
 
 **참고 사이트** 
 
@@ -198,7 +197,7 @@ console.log(name) //에러메세지 -> 재할당
 - [변수의 선언 방식의 차이](https://velog.io/@bathingape/JavaScript-var-let-const-%EC%B0%A8%EC%9D%B4%EC%A0%90) 
 
 
-
+<br/>
 
 
 
