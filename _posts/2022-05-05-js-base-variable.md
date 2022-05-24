@@ -182,11 +182,11 @@ console.log(name) //에러메세지 -> 재할당
 <br/>
 
 
-|                     |     재선언     |     재할당     |
-| :-----------------: | :-----------: | :-----------: |
-|  **var**            |       O       |       O       |
-|  **let**            |       X       |       O       |
-| **const**           |       X       |       X       |
+|         &nbsp;&nbsp;            |     &nbsp;재선언&nbsp;     |     &nbsp;재할당 &nbsp;    |
+| :-----------------------------: | :-----------------------: | :-----------------------: |
+|  &nbsp;**var**&nbsp;            |       &nbsp;O &nbsp;      |      &nbsp; O  &nbsp;     |
+|  &nbsp;**let**&nbsp;            |      &nbsp; X &nbsp;      |      &nbsp; O &nbsp;      |
+| &nbsp;**const**&nbsp;           |       &nbsp;X &nbsp;      |     &nbsp;  X  &nbsp;     |
 
 <br/>
 <br/>
