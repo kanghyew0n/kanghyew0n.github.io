@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[JavaScript] 함수"
+title: "[JavaScript] 함수(작성 완료 전)"
 categories:
   - javascript
 tags:
