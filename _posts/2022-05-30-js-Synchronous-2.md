@@ -26,7 +26,7 @@ tags:
 
 
 
-
+<br/>
 
 
 
@@ -38,7 +38,7 @@ tags:
 * `reject` : 오류 발생 시 에러 객체를 나타내는 `error`와 함께 호출해 거부함 
 
 
-
+<br/>
 ####  resolve, reject함수에는 전달인자를 넘길 수 있습니다. 이때 넘기는 전달인자는 어떻게 사용할 수 있나요?
 
 * then() 메소드를 사용하여 resolve 함수에는 전달인자를 넘길 수 있음 
@@ -47,13 +47,13 @@ tags:
 
 
 
-
+<br/>
 
 ####  new Promise()를 통해 생성한 Promise 인스턴스에는 어떤 메서드가 존재하나요? 각각은 어떤 용도인가요?
 
 
 
-
+<br/>
 
 ####  Promise.prototype.then 메서드는 무엇을 리턴하나요?
 
@@ -73,7 +73,7 @@ promise1.then((value) => {
 });
 ```
 
-
+<br/>
 
 ####  Promise.prototype.catch 메서드는 무엇을 리턴하나요?
 
@@ -90,7 +90,7 @@ promise1.catch((error) => {
 ```
 
 
-
+<br/>
 
 
 ####  Promise의 세 가지 상태는 각각 무엇이며, 어떤 의미를 가지나요?
@@ -101,7 +101,7 @@ promise1.catch((error) => {
 new Promise((resolve, reject) => {});
 ```
 
-
+<br/>
 
 - 이행 (*fulfilled)* : 연산이 성공적으로 완료됨
 
@@ -115,7 +115,7 @@ function getNum(){
   
 getData().then((resolveNum) => console.log(resolveNum));
 ```
-
+<br/>
 
 
 - 거부 (*rejected)* : 연산이 실패함
@@ -130,19 +130,19 @@ function getNum(){
 getNum().catch((error) => console.log(error));
 ```
 
-
+<br/>
 
 
 
 ####  await 키워드 다음에 등장하는 함수 실행은 어떤 타입을 리턴할 경우에만 의미가 있나요?
 
 
-
+<br/>
 
 
 ####  await 키워드를 사용할 경우, 어떤 값이 리턴되나요?
 
-
+<br/>
 
 
 
