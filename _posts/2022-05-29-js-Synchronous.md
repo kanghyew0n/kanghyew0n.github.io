@@ -31,7 +31,7 @@ function A(callback) {
 A(B);
 ```
 
-
+<br/>
 
 * callback in action: 반복 실행하는 함수 (iterator)
 
@@ -43,7 +43,7 @@ arr.map(function(ele, idx) {
 ```
 
 
-
+<br/>
 * callback in action : 이벤트에 따른 함수 (event handler)
 
 ```js
@@ -51,7 +51,7 @@ document.querySelector('#btn').addEventListener('click', function(e){
     console.log('button clicked');
 })
 ```
-
+<br/>
 
 
 **헷갈리지 말기 !**
@@ -71,14 +71,14 @@ document.querySelector('#btn').onclick = handleClick.bind();// (O)
 document.querySelector('#btn').onclick = handleClick(); // (X)
 ```
 
-
+<br/>
 
 #### blocking VS non-blocking
 
 * `blocking` : 요청 작업이 끝날때까지 다른 작업을 하지 않고 기다림 
 * `non-blocking` : 요청 작업이 수행하는 동안 다른 작업도 수행 가능 
 
-
+<br/>
 
 #### 동기(synchronously) VS 비동기 (asynchronously)
 처음 접하는 개념이라서 이름부터 낯설지만 sync는 눈에 많이 익숙하다,,, 우선! 개념을 이해하는 것은 어렵지 않다!
