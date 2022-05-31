@@ -9,7 +9,7 @@ tags:
 
 ---
 
-### 비동기 (1)
+### 비동기 이해하기 (1)
 
 
 
@@ -81,6 +81,7 @@ document.querySelector('#btn').onclick = handleClick(); // (X)
 
 
 #### 동기(synchronously) VS 비동기 (asynchronously)
+처음 접하는 개념이라서 이름부터 낯설지만 sync는 눈에 많이 익숙하다,,, 우선! 개념을 이해하는 것은 어렵지 않다!
 
 * 동기 (`synchronously`) : 동기식이란 각 당사자가 즉시 메시지를 수신하는 실시간 통신을 말한다 ([MDN](https://developer.mozilla.org/en-US/docs/Glossary/Synchronous))
 * 비동기 (`asynchronously`) : 비동기란 동시에 발생하는 둘 이상의 개체 또는 이벤트 (또는 이전 항목이 완료될 때까지 기다리지 않고 발생하는 여러 관련 작업)를 나타낸다 ([MDN](https://developer.mozilla.org/en-US/docs/Glossary/Asynchronous))
@@ -114,7 +115,7 @@ firstFunc(); // 첫번째 실행 -> 두번째 실행 -> 세번째 실행
 // 순차적으로 실행 됨 
 ```
 
-
+<br/>
 
 * 비동기적 
 
@@ -138,7 +139,7 @@ func1(); // 첫번째 실행 -> 몇번째 실행? -> (1초 뒤) -> 1초 뒤에 �
 // 비동기적으로 실행 됨 
 ```
 
-
+<br/>
 
 **잠깐, 갑자기 `setTimeout` ?**
 
@@ -147,7 +148,7 @@ func1(); // 첫번째 실행 -> 몇번째 실행? -> (1초 뒤) -> 1초 뒤에 �
 `setTimeout()`은 비동기 함수로서, 함수 스택의 다른 함수 호출을 막지 않는다. 달리 말하자면, `setTimeout()`을 사용해서 다음 함수 호출을 "일시정지" 할 수는 없다. 
 
 
-
+<br/>
 #### 그렇다면 blocking VS non-blocking / sync VS async 같은 개념일까?
 
 아니다! 서로 관점의 차이가 있다.
