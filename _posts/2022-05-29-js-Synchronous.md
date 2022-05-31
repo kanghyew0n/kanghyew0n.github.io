@@ -1,4 +1,3 @@
-
 ---
 layout: single
 title: "[JavaScript] 비동기 (1)"
@@ -6,7 +5,7 @@ categories:
   - javascript
 tags:
   - 자바스크립트  
-  - 비동기   
+  - 비동기 
 
 ---
 
