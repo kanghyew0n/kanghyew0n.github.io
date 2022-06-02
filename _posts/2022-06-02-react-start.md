@@ -1,16 +1,13 @@
-
-
 ---
 layout: single
-title: "[React] 리액트와 JSX 문법을 알아보자!"
-
+title: "[React] 리액트 시작하기"
 categories:
-  - React
+  - react
 tags:
-  - React  
-  - JSX 
+  - 리액트   
 
 ---
+
 
 ### 리액트 시작하기 
 
