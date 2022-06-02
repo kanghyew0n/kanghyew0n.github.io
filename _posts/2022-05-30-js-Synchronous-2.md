@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[JavaScript] 비동기 (2)"
+title: "[JavaScript] 비동기 이해하기 (2)"
 categories:
   - javascript
 tags:
