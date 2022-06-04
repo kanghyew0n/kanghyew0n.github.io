@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[JavaScript] 바리우저 DOM (2)"
+title: "[JavaScript] 브라우저 DOM (2)"
 categories:
   - DOM
 tags:
