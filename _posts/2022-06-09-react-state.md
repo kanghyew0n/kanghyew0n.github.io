@@ -216,5 +216,8 @@ const [filteredTweets, setFilteredTweets] = useState(dummyTweets);
 >
 > 그래도 최종적으로는 손으로 로직을 이해해서 글로 써보고  그걸 바탕으로 코드를 짤 수 있었다! 잘 안풀려서 굉장히 무기력했었는데 그래도 이해하고 코드를 써보니 기분이 다시 좋아졌다! 앞으로도 화이탱!!! 
 
+<br/>
+<br/>
+
 
 
