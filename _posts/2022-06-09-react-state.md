@@ -17,7 +17,7 @@ tags:
 
 <br/>
 
-![select](/home/kanghyew0n/카카오톡 받은 파일/select.jpg)
+![select](https://user-images.githubusercontent.com/104333249/172868409-7bebdbc7-e9da-4716-b346-ef03a8e86a41.jpg)
 
 <br/>
 
