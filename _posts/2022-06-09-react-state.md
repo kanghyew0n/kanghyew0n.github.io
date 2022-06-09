@@ -21,29 +21,29 @@ tags:
 
 <br/>
 
-### Select, Option
+## Select, Option
 
 #### 코드 작성 순서는 이렇다!
 
-1. state로 관리되어야 할 항목을 지정한다.
+1.state로 관리되어야 할 항목을 지정한다.
 
-​		a. select 에서 option으로 선택됐는지 여부 
+   a. select 에서 option으로 선택됐는지 여부 
 
-​		b. Tweet 컴포넌트에 선택된 username의 tweet만 가져오기 
+   b. Tweet 컴포넌트에 선택된 username의 tweet만 가져오기 
 
-2. `<select> ` 를 생성하여 tweets에 있는 username을 `<option>` 을 통해 보여주어야 한다. 
+2.`<select> ` 를 생성하여 tweets에 있는 username을 `<option>` 을 통해 보여주어야 한다. 
 
-​		a. 전체를 보여주는 옵션(1) 과 
+   a. 전체를 보여주는 옵션(1) 과 
 
-​		b. tweets에 있는 username을 보여주는 옵션(2) 이 필요하다.
+   b. tweets에 있는 username을 보여주는 옵션(2) 이 필요하다.
 
-3. select 된 username인지 함수를 통해 판별한다.
+3.select 된 username인지 함수를 통해 판별한다.
 
-​		a. 함수를 생성하고 옵션에서 선택된 것이 무엇인지 (1) 인지 (2) 인지 
+   a. 함수를 생성하고 옵션에서 선택된 것이 무엇인지 (1) 인지 (2) 인지 
 
-​		b. tweet에 어떤 데이터를 담을 것인지 
+   b. tweet에 어떤 데이터를 담을 것인지 
 
-4. 화면에 직접 보여질 ( `<ul>`에 담길 ) tweet을 가져오기 
+4.화면에 직접 보여질 ( `<ul>`에 담길 ) tweet을 가져오기 
 
    a. 함수를 통해 걸러진 (선택된 username) tweet 가져올지 
 
@@ -145,18 +145,18 @@ const [filteredTweets, setFilteredTweets] = useState(dummyTweets);
 
 <br/>
 
-### Delete
+## Delete
 
 #### 코드 작성 순서는 이렇다!
 
-1. 삭제 버튼을 생성하고 `onClick`시 함수 호출하게 하기 (함수 : `handleDelete`)
-2. 함수 ) 선택된 버튼의 idx를 제외한 나머지를 `Tweet` 컴포넌트에 담아주기
+1.삭제 버튼을 생성하고 `onClick`시 함수 호출하게 하기 (함수 : `handleDelete`)
+2.함수 ) 선택된 버튼의 idx를 제외한 나머지를 `Tweet` 컴포넌트에 담아주기
 
-​		a. 매개변수를 username, deleteIdx로 주고 
+   a. 매개변수를 username, deleteIdx로 주고 
 
-​		b.  deletes 라는 변수를 생성하고 필터로 `idx !== deleteIdx` 인 것만 담아주기 
+   b.  deletes 라는 변수를 생성하고 필터로 `idx !== deleteIdx` 인 것만 담아주기 
 
-3. 삭제버튼이 눌린 idx 를 제외하고 tweet 보여주기 
+3.삭제버튼이 눌린 idx 를 제외하고 tweet 보여주기 
 
    a. `handleDelete` 함수를 Tweet 에서 실행하고 idx도 부여해주기 
 
