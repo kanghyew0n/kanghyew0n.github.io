@@ -52,7 +52,8 @@ body {
     margin-top: 1em;
     margin-left: 0;
     margin-right: 0;
-    width: 100%;
+    // width: 100%;
+    max-width: 800px;
     clear: both;
 
     .page__content,
@@ -113,7 +114,9 @@ body {
 
   /* paragraph indents */
   p {
-    margin: 0 0 $indent-var;
+    // margin: 0 0 $indent-var;
+    margin: 0 0 0.85em;
+
 
     /* sibling indentation*/
     @if $paragraph-indent == true {
