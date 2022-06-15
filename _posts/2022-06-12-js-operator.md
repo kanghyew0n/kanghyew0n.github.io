@@ -119,13 +119,62 @@ function voidFunc() {
 * 비어있는 링크를 걸어야 할 때 사용함 
 * 전에는 자주 사용했지만 요즘엔 사용 잘 안함 
 
+
+
+### 배열 
+
+* 배열은 객체다.
+* 배열의 인덱스는 딕셔너리하다 
+
+```js
+const arr = [1, 2, 3];
+
+arr[0];
+arr[1];
+arr[2];
+arr[3] = 4;
+arr.push(5);
+arr[9] = 10;
+
+arr.prop = [6, 7];
+
+arr; //-> [1, 2, 3, 4, 5, <4 empty items>, 10, prop : [6, 7]]
+//-> [1, 2, 3, 4, 5, empty × 4, 10, prop: Array(2)] 콘솔창에 찍어본 모습 
+```
+<br/>
+* 배열의 길이 
+
+```js
+const arr = [1, 2, 3];
+arr[9] = undefined;
+arr.length = 20;
+arr.length = 0;
+arr; //-> [] 배열을 초기화 할 때 사용함!
+```
+
+
+
+### 유사 배열 객체 
+
+* 판별 : `Array.isArray`
+* 유사 배열 객체에서 배열의 메소드를 사용하고싶다면 ? -> `Array.from`
+
+```js
+function func() {
+    console.log(arguments); //-> ['0' : 1, '1':2, ...]
+}
+
+func(1, 2, 3, 4, 5, 6) 
+
+// arguments 콘솔창 : [1, 2, 3, 4, 5, 6, callee: ƒ, Symbol(Symbol.iterator): ƒ]
+// 배열처럼 생겼지만 아님, 프로토타입 메서드를 보면 배열 메소드를 가지고 있는게 없음 
+```
+
+
+
 <br/>
 
 <br/>
-
-
-
-
 
 
 
