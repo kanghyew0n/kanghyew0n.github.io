@@ -11,7 +11,7 @@ tags:
 
 ### HTTP
 
-**하이퍼텍스트 전송 프로토콜(HTTP)**은 HTML과 같은 하이퍼미디어 문서를 전송하기위한 애플리케이션 레이어프로토콜이다. 클라이언트와 서버가 송수신을 하기 위한 표준 프로토콜이다. 
+**하이퍼텍스트 전송 프로토콜(HTTP)** 은 HTML과 같은 하이퍼미디어 문서를 전송하기위한 애플리케이션 레이어프로토콜이다. 클라이언트와 서버가 송수신을 하기 위한 표준 프로토콜이다. 
 
 <u>프로토콜이란 ? 컴퓨터 내부나 컴퓨터 사이에서 데이터 교환을 정의하는 규칙체계이다.</u>
 
@@ -19,7 +19,7 @@ tags:
 
 ### Ajax 
 
-**AJAX (Asynchronous JavaScript and XML)**는 말 그대로 JavaScript와 XML을 이용한 비동기적으로 데이터를 요청하고, 서버가 응답한 데이터를 수신하여 웹페이지를 동적으로 갱신하는 프로그래밍 기법이다. 전통적인 웹페이지 생명주기는 아래와 같은 단점을 가지고 있다. (Ajax 이전)
+**AJAX (Asynchronous JavaScript and XML)** 는 말 그대로 JavaScript와 XML을 이용한 비동기적으로 데이터를 요청하고, 서버가 응답한 데이터를 수신하여 웹페이지를 동적으로 갱신하는 프로그래밍 기법이다. 전통적인 웹페이지 생명주기는 아래와 같은 단점을 가지고 있다. (Ajax 이전)
 
 1. 변경할 필요가 없는 부분까지 포함하여 페이지를 재렌더링 하였고 (불필요한 데이터 통신 발생)
 2. 이로 인해 화면 전환이 일어나면 화면이 순간적으로 깜빡이는 현상이 발생한다. 
@@ -45,7 +45,7 @@ fetch('http://example.com/movies.json')
 
 ### JSON
 
-**JSON (JavaScript Object Notation)**은 경량의 DATA-교환 형식이다. 이 형식은 사람이 읽고 쓰기에도 용이하다는 장점이 있다. JSON은 서버로 데이터를 보내거나 받을 때 사용하는데 "키-값 쌍"으로 이루어진 데이터 오브젝트를 전달한다. 언어 독립적인 형태이기 때문에 댑분의 프로그래밍 언어에서 사용할 수 있다. JSON을 사용하기 위해서는 정해진 규격을 지켜야 한다.
+**JSON (JavaScript Object Notation)** 은 경량의 DATA-교환 형식이다. 이 형식은 사람이 읽고 쓰기에도 용이하다는 장점이 있다. JSON은 서버로 데이터를 보내거나 받을 때 사용하는데 "키-값 쌍"으로 이루어진 데이터 오브젝트를 전달한다. 언어 독립적인 형태이기 때문에 댑분의 프로그래밍 언어에서 사용할 수 있다. JSON을 사용하기 위해서는 정해진 규격을 지켜야 한다.
 
 * object는 `{`좌 중괄호로 시작하고 `}`우 중괄호로 끝내어 표현한다. 각 name 뒤에 `:`colon을 붙이고 `,`comma로 name/value 쌍들 간을 구분한다.
 * *array*은 값들의 순서화된 collection 이다. array는 `[`left bracket로 시작해서 `]`right bracket로 끝내어 표현한다. `,`comma로 array의 값들을 구분한다.
@@ -110,7 +110,6 @@ console.log(obj.result);
 
 * [Fetch API (MDN)](https://developer.mozilla.org/ko/docs/Web/API/Fetch_API/Using_Fetch)
 * [JSON](https://www.json.org/json-ko.html)
-* 
 
 
 
