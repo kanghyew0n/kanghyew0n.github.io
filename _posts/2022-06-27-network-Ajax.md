@@ -95,18 +95,12 @@ console.log(obj.result);
 요약해보면 `Ajax`는 비동기적으로 데이터를 처리하는 프로그래밍 기법이고 이를 사용하기 위해서는 데이터를 받아올때 `Fetch API`를 사용하게 되며 이때 데이터를` Json` 형태로 받게 되는 것이다!
 
 </br>
-
 </br>
 
 
 
 
-
-
-
-
-
-**참고 사이트 **
+**참고 사이트** 
 
 * [Fetch API (MDN)](https://developer.mozilla.org/ko/docs/Web/API/Fetch_API/Using_Fetch)
 * [JSON](https://www.json.org/json-ko.html)
