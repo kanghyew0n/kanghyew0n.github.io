@@ -44,18 +44,8 @@ var elem = document.getElementById('para');
 ```
 
 
-
-### 2-1. Document.getElementsByClassName()
-
-*  `Document`주어진 클래스 이름을 모두 가진 모든 자식 요소의 배열과 유사한 개체를 반환한다. 
-* 
-
-
-
-### 2-2. Element.getElementsByClassName()
-
-* 주어진 클래스를 가진 모든 자식 엘리먼트의 실시간 `HTMLCollection`을 반환한다.
-* 
+<br>
+<br>
 
 
 
