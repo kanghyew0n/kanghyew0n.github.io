@@ -11,6 +11,8 @@ tags:
 
 ---
 
+<br/>
+<br/>
 
 
 # React 시작하기 
@@ -49,8 +51,8 @@ $ npm install (npm i)
 $ npm start
 ```
 
-
-
+<br/>
+<br/>
 
 
 ## React Router 시작하기 
@@ -104,7 +106,8 @@ function App() {
 }
 ```
 
-
+<br/>
+<br/>
 
 
 
@@ -131,7 +134,8 @@ $ npm install express
 ```
 
 
-
+<br/>
+<br/>
 
 
 ## Styled Components 설치하기
@@ -163,6 +167,7 @@ $ yarn add styled-components
 import styled from "styled-components"
 ```
 
+<br/>
 
 
  #### +전역 스타일 설정하기
@@ -196,7 +201,8 @@ function App() {
 ```
 
 
-
+<br/>
+<br/>
 
 
 ## Storybook 사용하기 
@@ -220,7 +226,8 @@ $ npm run storybook
 >  /.storybook 안에 있는 Storybook 설정 파일에 의해서 컴포넌트 파일과 똑같은 파일 이름에 .stories를 붙여 파일을 만들면 알아서 스토리로 인식함 
 
 
-
+<br/>
+<br/>
 
 
 ## 미디어 쿼리 적용하기 (반응형)
@@ -274,7 +281,8 @@ $ npm run storybook
 ```
 
 
-
+<br/>
+<br/>
 
 
 ## @keyframes 사용하기 (CSS 애니메이션 )
@@ -318,7 +326,8 @@ $ npm run storybook
 ```
 
 
-
+<br/>
+<br/>
 
 
 ## Canvas 사용하기 
@@ -354,7 +363,8 @@ const canvas = document.querySelector("#canvas");
 
 
 
-
+<br/>
+<br/>
 
 
 
