@@ -11,20 +11,19 @@ tags:
 
 
 
+
 <br/>
 
 
-<aside> 💡 google 번역 </aside>
+## 💡 google 번역 
 
 ![Untitled](https://user-images.githubusercontent.com/104333249/182866587-46c5ebd8-9ff6-438f-ad89-5b613cba4d60.png)
 
-## 😌 Performance의 Opportunities 항목
+### 😌 Performance의 Opportunities 항목
 
 - **사용되지 않는 JavaScript 줄이기**
   - 네트워크 작업에 사용되는 바이트를 줄이는 데 필요할 때까지 스크립트 로드를 연기해라 > 'React.lazy()'로 자바스크립트 번들을 분할해라
 
-------
-
 
 
 <br/>
@@ -33,11 +32,11 @@ tags:
 
 
 
-<aside> 💡 파파고 </aside>
+## 💡 파파고 
 
 ![Untitled (1)](https://user-images.githubusercontent.com/104333249/182866725-0d21b3fc-b8cd-43b4-8d01-486bda5acd73.png)
 
-## 🤔 Performance의 Opportunities 항목
+### 🤔 Performance의 Opportunities 항목
 
 *(가장 많은 시간이 소요된 항목 순서)*
 
