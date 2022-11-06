@@ -87,6 +87,9 @@ const options = {
 2. mutate 가져와서 get 한 data → optimisticData 로 바꿔서 낙관적 업데이트 가능하게 하기 
 이렇게 적어보니 간단해보이지만 2번에서 실패하고 말았다.
 
+<br/>
+
+### [n 차 시도] 
 ```js
 const { data, isLoading, isError, mutate } = useGetPosts();
 
@@ -104,12 +107,41 @@ const onDelete = async () => {
 ```
 optimisticData 에서 삭제를 진행하면 해당 아이디 빼고 전체 리스트 데이터를 반환하려 했는데 부모 컴포넌트 (리스트 컴포넌트)에서 에러가 났지만 원인은 찾지 못했다.
 훌쩍 
-
-
-
-
+→ 공식문서를 뒤져보니 useSWR() hook으로부터 mutate 함수를 얻을 수 있지만 useSWRConfig를 사용하면 전역에서 뿌려줄 수 있다고 한다.
+내가 이해한 것은 ,
+1. swr이 get에 최적화 되어있는 라이브러리 → 직접적으로 get 을 해서 얻은 data를 바로 변경해주고 싶다 <br/>
+`  const { data, mutate } = useSWR('/api/user', fetcher)`
+3. get이 아닌 다른 메서드로 인한 반응을 mutate 하고싶다 → useSWRConfig를 사용 <br/> ` const { mutate } = useSWRConfig()`
 
 <br/>
 
 
+### [n+1 차 시도] 
+```js
+import { useSWRConfig } from "swr";
+
+...
+
+ const { mutate } = useSWRConfig();
+
+ const onUpdate = async () => {
+    await mutate("/post", useUpdatePost(item.id, title, body), {
+      optimisticData: setItem({ title, body }),
+      rollbackOnError: true,
+      populateCache: true,
+      revalidate: false,
+    });
+    setIsClick(false);
+  };
+
+```
+우선 결과적으로 성공인지 헷갈린다! 원하는 대로 낙관적인 업데이트를 하긴 하지만,, 만약 에러가 발생했을때 변경되었던 값이 다시 서버에 맞춰져야 하는데 몇번을 테스트 해도 에러가 나지 않는다 (어굴)
+우선 에러 없이 진행되긴 했다! <br/>
+
+그리고 많이 발생했던 에러 중 하나! hooks 규칙에 대한 에러! <br/>
+나는 api 통신 부분을 hooks 로 빼서 사용하고 있었는데 그 안에서 mutate 함수를 사용 하려고 했을때 에러가 발생했다. 이것은 "오직 React 함수 내에서 Hook을 호출해야 합니다" 를 어긴것이기 때문에 에러가 났나는 나의 결론이다... (실제로 최근 프로젝트 진행했을때도 많이 발생했던 에러다..!) <br/>
+[공식문서](https://ko.reactjs.org/docs/hooks-rules.html) 참고 해보시길 !
+
+
+<br/>
 <br/>
