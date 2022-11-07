@@ -1,13 +1,6 @@
----
-layout: single
-title: "[코드스테이츠] section1 회고"
-categories:
-  - 회고 
-tags:
-  - 코드스테이츠  
-  - 회고   
+# [코드스테이츠] section1 회고
 
----
+<br/>
 
 ### 😎 **Section 1을 마치면서!!!**
 
