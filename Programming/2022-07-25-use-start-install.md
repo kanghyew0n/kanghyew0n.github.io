@@ -1,21 +1,19 @@
----
-layout: single
-title: "[시작하기] 설치를 어떻게 했더라 ..."
-categories:
-  - 시작하기 
-tags:
-  - 리액트   
-  - styled-component
-  - storybook 
-  
+# [시작하기] 설치를 어떻게 했더라 ...
 
----
+[1. React 시작하기](#1-react-시작하기) <br/>
+[2. React Router 시작하기](#2-react-router-시작하기) <br/>
+[3. 서버 실행하기](#3-서버-실행하기) <br/>
+[4. Styled Components 설치하기](#4-styled-components-설치하기) <br/>
+[5. Storybook 사용하기](#5-storybook-사용하기) <br/>
+[6. 미디어 쿼리 적용하기](#6-미디어-쿼리-적용하기) <br/>
+[7. keyframes 사용하기](#7-keyframes-사용하기) <br/>
+[8. Canvas 사용하기](#8-canvas-사용하기) <br/>
 
 <br/>
 <br/>
 
 
-# React 시작하기 
+# 1. React 시작하기 
 
 1. `node` 와 `npm` 이 설치되어있는지 확인한다 (생략 가능) 
 
@@ -52,10 +50,10 @@ $ npm start
 ```
 
 <br/>
-<br/>
 
 
-## React Router 시작하기 
+
+## 2. React Router 시작하기 
 
 * 리액트 프로젝트를 생성했다면 해당 프로젝트를 에디터로 켜줌 
 
@@ -111,7 +109,7 @@ function App() {
 
 
 
-## 서버 실행하기 
+## 3. 서버 실행하기 
 
 * `node` 로 실행하기 
 
@@ -138,7 +136,7 @@ $ npm install express
 <br/>
 
 
-## Styled Components 설치하기
+## 4. Styled Components 설치하기
 
 1. 라이브러리 설치하기 
 
@@ -205,7 +203,7 @@ function App() {
 <br/>
 
 
-## Storybook 사용하기 
+## 5. Storybook 사용하기 
 
 리액트 프로젝트 만든 후 
 
@@ -230,7 +228,7 @@ $ npm run storybook
 <br/>
 
 
-## 미디어 쿼리 적용하기 (반응형)
+## 6. 미디어 쿼리 적용하기
 
 - 스마트폰, 테블릿과 같은 모바일 장치 전용 설정
 - 모바일 장치의 화면 크기에 따라 페이지를 출력하려면 반드시 사용해야 하는 설정 
@@ -285,7 +283,7 @@ $ npm run storybook
 <br/>
 
 
-## @keyframes 사용하기 (CSS 애니메이션 )
+## 7. keyframes 사용하기
 
 * 키 프레임 블록 생성하기 
 
@@ -330,7 +328,7 @@ $ npm run storybook
 <br/>
 
 
-## Canvas 사용하기 
+## 8. Canvas 사용하기 
 
 * DOM에서 불러올 canvas 태그 작성하기 
 
