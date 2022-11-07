@@ -1,15 +1,11 @@
----
-layout: single
-title: "[React] React State & Props (Advanced Challenge)"
-categories:
-  - react
-tags:
-  - 리액트   
-  - state  
 
----
+<br/>
 
-### React State & Props (Advanced Challenge)
+# [React] React State & Props (Advanced Challenge)
+
+<br/>
+
+## React State & Props (Advanced Challenge)
 
  BareMinimum 테스트는 페어분과 어떻게 해서 이해를 했지만 advanced는 생각조차 하지 못했다! 그러다가 페어분께 조금 힌트를 얻고 세션때 들은 수업을 바탕으로 아이패드에 끄적이며 이해하려고 노력했다. 코드를 보고 치고싶지는 않아서 이해한 내용을 정리해서 그걸 바탕으로 코드를 작성했다. (물론 다른 분들이 보면 다 적은거 아니냐고 할 수 있지만 ,, ㅜ)
 
@@ -23,7 +19,7 @@ tags:
 
 ## Select, Option
 
-#### 코드 작성 순서는 이렇다!
+### 코드 작성 순서는 이렇다!
 
 1. state로 관리되어야 할 항목을 지정한다.
 
@@ -51,7 +47,7 @@ tags:
 
 <br/>
 
-#### 1. state로 관리되어야 할 항목을 지정하기 
+## 1. state로 관리되어야 할 항목을 지정하기 
 
 * select 에서 option으로 선택됐는지 여부 : 필터로 걸러졌는가? (초기값 false)
 
@@ -66,8 +62,9 @@ const [filteredTweets, setFilteredTweets] = useState(dummyTweets);
 ```
 
 
+<br/>
 
-#### 2. `<select> ` 를 생성하여 tweets에 있는 username을 `<option>` 을 통해 보여주기 
+## 2. `<select> ` 를 생성하여 tweets에 있는 username을 `<option>` 을 통해 보여주기 
 
 * 전체를 보여주는 옵션 (1) 
 
@@ -96,8 +93,9 @@ const [filteredTweets, setFilteredTweets] = useState(dummyTweets);
 ```
 
 
+<br/>
 
-#### 3. select 된 username인지 함수를 통해 판별 (함수생성)
+## 3. select 된 username인지 함수를 통해 판별 (함수생성)
 
 * 함수를 생성하고 옵션에서 선택된 것이 무엇인지 (1) 인지 (2) 인지 / tweet에 어떤 데이터를 담을 것인지 
   * 옵션 (1) : `event.target.value === "all"` -> 전체 /  setTweets(tweets) -> 젠체 데이터 
@@ -119,8 +117,9 @@ const [filteredTweets, setFilteredTweets] = useState(dummyTweets);
 ```
 
 
+<br/>
 
-#### 4. 화면에 직접 보여질 ( `<ul>`에 담길 ) tweet을 가져오기 
+## 4. 화면에 직접 보여질 ( `<ul>`에 담길 ) tweet을 가져오기 
 
 * 삼항연산자로 isFiltered ? : 
   * 함수를 통해 걸러진 (선택된 username) tweet 가져올지 
@@ -147,7 +146,7 @@ const [filteredTweets, setFilteredTweets] = useState(dummyTweets);
 
 ## Delete
 
-#### 코드 작성 순서는 이렇다!
+### 코드 작성 순서는 이렇다!
 
 1. 삭제 버튼을 생성하고 `onClick`시 함수 호출하게 하기 (함수 : `handleDelete`)
 2. 함수 ) 선택된 버튼의 idx를 제외한 나머지를 `Tweet` 컴포넌트에 담아주기
@@ -162,7 +161,9 @@ const [filteredTweets, setFilteredTweets] = useState(dummyTweets);
 
 
 
-#### 1. 삭제 버튼을 생성하고 `onClick`시 함수 호출하게 하기 (함수 : `handleDelete`)
+<br/>
+
+## 1. 삭제 버튼을 생성하고 `onClick`시 함수 호출하게 하기 (함수 : `handleDelete`)
 
 이건 tweet.js에서 작성해줘야하는 부분임 
 
@@ -173,8 +174,9 @@ const [filteredTweets, setFilteredTweets] = useState(dummyTweets);
 ```
 
 
+<br/>
 
-#### 2. 선택된 버튼의 idx를 제외한 나머지를 `Tweet` 컴포넌트에 담아주기 (함수 생성)
+## 2. 선택된 버튼의 idx를 제외한 나머지를 `Tweet` 컴포넌트에 담아주기 (함수 생성)
 
 * 매개변수를 username, deleteIdx로 주고 
 * deletes 라는 변수를 생성하고 필터로 `idx !== deleteIdx` 인 것만 담아주기 
@@ -189,7 +191,7 @@ const [filteredTweets, setFilteredTweets] = useState(dummyTweets);
 
 
 
-#### 3. 삭제버튼이 눌린 idx 를 제외하고 tweet 보여주기 
+## 3. 삭제버튼이 눌린 idx 를 제외하고 tweet 보여주기 
 
 * `handleDelete` 함수를 Tweet 에서 실행하고 idx도 부여해주기 (위에서 작성한 부분에서 추가해주기)
 

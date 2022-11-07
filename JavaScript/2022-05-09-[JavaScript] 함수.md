@@ -1,15 +1,10 @@
----
-layout: single
-title: "[JavaScript] 함수(작성 완료 전)"
-categories:
-  - javascript
-tags:
-  - 자바스크립트  
-  - 함수   
-
----
 
 <br/>
+
+# [JavaScript] 함수(작성 완료 전)
+
+<br/>
+
 
 ### 3. 함수 (function)
 
@@ -49,6 +44,7 @@ function sum(number) {
 console.log(sum(3)); //8
 ```
 
+<br/>
 <br/>
 
 #### 커밍쑨,,,

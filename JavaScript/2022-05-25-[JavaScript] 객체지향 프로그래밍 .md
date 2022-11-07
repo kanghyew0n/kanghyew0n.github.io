@@ -1,25 +1,23 @@
----
-layout: single
-title: "[JavaScript] 객체지향 프로그래밍"
-categories:
-  - javascript
-tags:
-  - 자바스크립트  
-  - 객체지향    
+<br/>
 
----
+# [JavaScript] 객체지향 프로그래밍 
+
+<br/>
 
 
 
-#### 클래스(Class)와 인스턴스(Instance) 
+
+## 클래스(Class)와 인스턴스(Instance) 
 
 `Class` 는 객체를 생성하기 위한 템플릿이다. 클래스는 데이터와 이를 조작하는 코드를 하나로 추상화한다. 자바스크립트에서 클래스는 프로토타입을 이용해서 만들어졌지만 ES5의 클래스 의미와는 다른 문법과 의미를 가진다. (MDN)
 
 `Instance` 는 템플릿을 바탕으로 한 객체이다. 개체는 일반 함수를 정의하듯 만들지만 함수를 이용하는 방법이 다르다.
 
 
+<br/>
 
-#### 클래스(Class)를 만드는 방법 
+
+## 클래스(Class)를 만드는 방법 
 
 1. `ES5` (클래스 표현식) : 함수를 사용하는 방법 
 
@@ -63,8 +61,10 @@ class Rectangle { //class 키워드 사용
 ```
 
 
+<br/>
 
-#### 인스턴스(Instance)를 만드는 방법 
+
+## 인스턴스(Instance)를 만드는 방법 
 
 * `new` 키워드를 사용한다. (`new` + 클래스 명)
 * 생성된 인스턴스 객체 (`redRectangle` , `blueRectangle`) 는 class의 고유한 속성&메소드 가짐 
@@ -75,8 +75,10 @@ let blueRectangle = new Rectangle(6, 10, '블루');
 ```
 
 
+<br/>
 
-#### this?
+
+## this?
 
 * `this`는 인스턴스 객체를 의미한다. parameter로 넘어온 넓이, 높이, 색상 등은 인스턴스 생성 시 지정하는 값이며,  위와 같이 this에 할당한다는 것은 만들어진 인스턴스에 해당 넓이, 높이, 색상을 부여하겠다는 의미이다. 
 
@@ -89,6 +91,8 @@ let blueRectangle = new Rectangle(6, 10, '블루');
 - ES5 클래스 작성 문법
 - ES6 클래스 작성 문법
 
+
+<br/>
 
 
 ### 객체지향 프로그래밍 (OOP: Object Oriented programming)
@@ -103,7 +107,9 @@ let blueRectangle = new Rectangle(6, 10, '블루');
 
 
 
-#### OOP의 기본 개념 
+<br/>
+
+## OOP의 기본 개념 
 
 객체지향 프로그래밍의 장점을 말하기 위해 필요한 주요 개념 4가지가 있다. 
 
@@ -114,22 +120,28 @@ let blueRectangle = new Rectangle(6, 10, '블루');
 
 
 
-#### 캡슐화 (Encapsulation)
+<br/>
+
+## 캡슐화 (Encapsulation)
 
 - 객체의 속성(data fields)과 행위(메서드, methods)를 하나로 묶고
 - 실제 구현 내용 일부를 내부에 감추어 은닉함 -> 정보은닉의 특징
 - 느슨한 결합(Loose Coupling)에 유리: 언제든 구현을 수정할 수 있음 -> **재사용성 높임 **
 
 
+<br/>
 
-#### 추상화  (Abstraction)
+
+## 추상화  (Abstraction)
 
 * 복잡한 자료, 모듈, 시스템 등 특정한 대상을 관찰하여 핵심적이고 특징적인 공통점(개념 혹은 기능)들을 뽑아내는 과정 -> 인터페이스 단순해짐 
 *  **코드가 복잡하지 않게 만들고, 단순화된 사용으로 변화에 대한 영향을 최소화함 **
 
 
+<br/>
 
-#### 상속 (Inheritance)
+
+## 상속 (Inheritance)
 
 * 기본 클래스(base class)의 특징을 파생 클래스(derived class)가 상속받음 -> 편의상 부모/자식관계 
 * 기존 클래스에 기능을 가져와 재사용할 수 있으면서도 동시에 새롭게 만든 클래스에 새로운 기능을 추가할 수 있음 -> 계층형 구조가 형성됨 & **불필요한 코드 줄여 재사용성 높임**
@@ -137,7 +149,7 @@ let blueRectangle = new Rectangle(6, 10, '블루');
 
 
 
-#### 다형성 (Polymorphism)
+## 다형성 (Polymorphism)
 
 * 다양한 형태가 존재한다는 뜻 -> 같은 동작이지만 다른 결과물이 나오는 것 
 * 같은 이름의 속성을 유지하여 메서드 이름을 낭비하지 않는다는 것
@@ -145,7 +157,9 @@ let blueRectangle = new Rectangle(6, 10, '블루');
 
 
 
-### 프로토타입 (Prototype)
+<br/>
+
+## 프로토타입 (Prototype)
 
 JavaScript는 흔히 **프로토타입 기반 언어(prototype-based language)**라 불린다. 모든 객체들이 메소드와 속성들을 상속 받기 위한 템플릿으로써 **프로토타입 객체(prototype object)**를 가진다는 의미이다. (MDN)
 
@@ -223,9 +237,11 @@ hyewon.valueOf();
 
 
 
+<br/>
 
 
-#### 프로토타입 체인 (Prototype Chain)
+
+## 프로토타입 체인 (Prototype Chain)
 
 상속 관점에서 자바스크립트의 생성자는 객체이다. 이 객체들은 프로토타입 속성을 가지는데 자신의 `프로토타입`이 되는 다른 객체를 가리킨다. 그 객체의 프로토타입 또한 프로토타입을 가지고 있고 이것이 반복된다 -> `프로토타입 체인`
 
@@ -279,8 +295,9 @@ class Square extends Polygon {
 ```
 
 
+<br/>
 
-#### DOM과 프로토타입
+## DOM과 프로토타입
 
 * div 엘리먼트의 상속 관계 :`HTMLDivElement` -> `HTMLElement` -> `Element` -> `Node` -> `EventTarget`
 * `EventTarget`의 부모로는 모든 클래스의 조상인 `Object`가 있음 
@@ -322,23 +339,6 @@ div.__proto__.__proto__.__proto__.__proto__.__proto__.__proto__.__proto__
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<br/>
+<br/>
 

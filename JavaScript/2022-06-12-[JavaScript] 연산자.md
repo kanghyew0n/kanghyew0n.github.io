@@ -1,17 +1,12 @@
----
-layout: single
-title: "[JavaScript] 연산자"
-categories:
-  - javascript
-tags:
-  - 자바스크립트  
-  - 연산자
 
----
+<br/>
+
+# [JavaScript] 연산자 
+
+<br/>
 
 
-
-### 삼항 연산자 
+## 삼항 연산자 
 
 * 3개의 피연산자, 조건 연산자 (if문과 비교)
 
@@ -40,9 +35,9 @@ isAdult; //-> '성인'
 * 삼항연산자 : (값, 식, 문) 중 (값, 식) 만 들어올 수 있다 -> 조건과 참, 거짓을 작성할 때 
 * if문 : for문, while문 등등 함께 사용이 가능함 
 
+<br/>
 
-
-### typeof 연산자 
+## typeof 연산자 
 
 * primitive : string, number, bigint, boolean, undefined, symbol, null
 
@@ -70,9 +65,9 @@ typeof new Boolean(true); //-> 'object'
 * null : 원시값인데 참조값처럼 type이 'object'가 나옴 
 * null -> 객체로 인식 -> 자바스크립트 초기 설계 오류 !
 
+<br/>
 
-
-### instanceof 연산자 
+## instanceof 연산자 
 
 * 객체의 인스턴스를 확인하기 좋음 
 * 즉 객체의 인스턴스가 어떤 생성자로 생성된 것인지 파악 가능 
@@ -97,9 +92,9 @@ func instanceof Object; //-> true
 // 프로토타입 최상위인 객체로 비교를 하면 true로 나옴 !
 ```
 
+<br/>
 
-
-### 기타 연산자 
+## 기타 연산자 
 
 * void 연사자 -> 표현식 
 
@@ -119,9 +114,9 @@ function voidFunc() {
 * 비어있는 링크를 걸어야 할 때 사용함 
 * 전에는 자주 사용했지만 요즘엔 사용 잘 안함 
 
+<br/>
 
-
-### 배열 
+## 배열 
 
 * 배열은 객체다.
 * 배열의 인덱스는 딕셔너리하다 
@@ -152,9 +147,9 @@ arr.length = 0;
 arr; //-> [] 배열을 초기화 할 때 사용함!
 ```
 
+<br/>
 
-
-### 유사 배열 객체 
+## 유사 배열 객체 
 
 * 판별 : `Array.isArray`
 * 유사 배열 객체에서 배열의 메소드를 사용하고싶다면 ? -> `Array.from`
@@ -173,26 +168,5 @@ func(1, 2, 3, 4, 5, 6)
 
 
 <br/>
-
 <br/>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

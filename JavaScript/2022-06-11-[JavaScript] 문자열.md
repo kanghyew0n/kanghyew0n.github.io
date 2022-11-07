@@ -1,15 +1,11 @@
----
-layout: single
-title: "[JavaScript] 문자열 "
-categories:
-  - javascript
-tags:
-  - 자바스크립트  
-  - 문자열   
 
----
+<br/>
 
-### 문자열 변환 
+# [JavaScript] 문자열 
+
+<br/>
+
+## 문자열 변환 
 
 여러가지 타입 문자열로 변환하기!
 
@@ -40,9 +36,9 @@ String([1, 2, 3]); //-> '1, 2, 3'
 JSON.stringify([1, 2, 3]); //-> '[1, 2, 3]'
 ```
 
+<br/>
 
-
-### 문자열 병합 
+## 문자열 병합 
 
 표현식 사용에서도 병합 가능함!
 
@@ -58,9 +54,10 @@ genHello('kang');
 //-> '안녕하세요 kang님 반갑습니다.'
 ```
 
+<br/>
 
 
-### 문자열과 배열 (헷갈리는 부분!!!)
+## 문자열과 배열 (헷갈리는 부분!!!)
 
 * 문자열에서 배열로 변환 : `.split()`
 
@@ -88,9 +85,9 @@ const helloWorld = 'HELLO WORLD';
 [...helloWorld]; //-> ['H', 'E', 'L', 'L', 'O', ' ', 'W', 'O', 'R', 'L', 'D']
 ```
 
+<br/>
 
-
-### 템플릿 리터럴 
+## 템플릿 리터럴 
 
 * 멀티라인 (개행, 줄바꿈)이 자유로움 
 
@@ -145,23 +142,8 @@ const divTag = genHello('kang'); //-> '<div>kang</div>'
 body.innerHTML = divTag; //-> DOM에 안전하게 삽입 가능 
 ```
 
-<br/><br/>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<br/>
+<br/>
 
 
 

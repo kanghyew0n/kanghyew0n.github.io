@@ -1,23 +1,18 @@
----
-layout: single
-title: "[JavaScript] 기본 복습"
-categories:
-  - javascript
-tags:
-  - 자바스크립트  
-  - scope
-  - 호이스팅 
-  - 깊은 복사 
-  - 얕은 복사 
----
+<br/>
 
-### 04. Scope
+# [JavaScript] 기본 복습
+
+<br/>
+
+## 04. Scope
 
 변수를 선언하는 방법에는`var` , `let` , `const`   3가지가 있다.  
 
 먼저 var는 변수를 선언하고, 선택적으로 초기화할 수 있다. ES5에서는 대표적인 변수로 사용되었지만 ES6부터는 `let` 과 `const` 가 많이 사용되었다. 그 이유는 호이스팅(Hoisting) 에 있다. `let`과 `const`도 호이스팅의 대상이긴 하지만 `var`와 달리 `undefined`로 초기화 하지 않는다.
 
-#### 호이스팅 (Hoistiong)
+<br/>
+
+### 호이스팅 (Hoistiong)
 
 > "변수의 선언과 초기화를 분리한 후, 선언만 코드의 최상단으로 옮기는" 것.  따라서 변수를 정의하는 코드보다 사용하는 코드가 앞서 등장할 수 있다.  다만 선언과 초기화를 함께 수행하는 경우, 선언 코드까지 실행해야 변수가 초기화된 상태가 됨을 주의!
 
@@ -29,9 +24,11 @@ console.log(age);
 var age;
 ```
 
+<br/>
 
 
-#### lexical scope와 closure
+
+### lexical scope와 closure
 
 ```js
     // 전역변수 age, name, height
@@ -66,10 +63,11 @@ var age;
 ```
 
 
+<br/>
 
 
 
-### 6. Types-part2
+## 6. Types-part2
 
 **참조 자료형을 변수에 할당할 경우, 데이터의 주소가 저장됩니다**
 
@@ -106,9 +104,10 @@ var age;
 	console.log(person.son === { age: 20 }) //값은 같지만 주소값이 달라서 false임
 ```
 
+<br/>
 
 
-### 07. Array
+## 07. Array
 
 **Array 메소드 slice를 확인합니다**
 
@@ -122,9 +121,9 @@ console.log(arr.slice(3, 100)) // ["D"] => 3번째 인덱스부터 끝까지 복
 
 
 
-### 08. Object
+## 08. Object
 
-#### this
+### this
 
 > 대부분의 경우 this의 값은 함수를 호출한 방법이 결정합니다. 실행하는 중 할당으로 설정할 수 없고 함수를 호출할 때 마다 다를 수 있습니다.
 
@@ -142,9 +141,10 @@ var o = {
 console.log(o.f()); // 37
 ```
 
+<br/>
 
 
-#### 얕은 복사(Shallow Copy)와 깊은 복사(Deep Copy)
+### 얕은 복사(Shallow Copy)와 깊은 복사(Deep Copy)
 
 * 얕은 복사는 주소값의 복사를, 깊은 복사는 값 자체의 복사를 나타냄 
 * 객체를 할당하여 복사하는 것 주소를 복사하는 것 => 얕은 복사 
@@ -156,6 +156,7 @@ console.log(o.f()); // 37
 >**`Object.assign()`** 메서드는 출처 객체들의 모든 [열거 가능](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Object/propertyIsEnumerable)한 [자체 속성](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty)을 복사해 대상 객체에 붙여넣습니다. 그 후 대상 객체를 반환합니다.
 
 
-
+<br/>
+<br/>
 
 

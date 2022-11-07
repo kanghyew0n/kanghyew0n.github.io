@@ -1,20 +1,16 @@
----
-layout: single
-title: "[JavaScript] 브라우저 DOM"
-categories:
-  - javascript
-tags:
-  - 자바스크립트  
-  - DOM   
----
+<br/>
 
-#### 시작하면서 
+# [JavaScript] 브라우저 DOM
+
+<br/>
+
+## 시작하면서 
 
 `HTML` (Hypertext Markup Language) 이란 웹사이트의 구조를 지정하는 기술적인 어어다. `HTML`을 작성할 때  요소를 작성하고 요소는 한 쌍의 태그로 감싸져있다.  예를들어 `input` 태그는 `<input type="text" name="name">` 이렇게 사용한다. 이를 브라우저에 띄우면 텍스트를 입력할 수 있는 창이 나오게 된다. 그렇다면 어떻게 저런 태그들이 브라우저에 텍스트 창으로 나타나게 될까?
 
+<br/>
 
-
-### DOM 
+## DOM 
 
 `DOM` (Document Object Model) 은 `HTML` 또는 `XML` document와 상호작용 하고 표현하는 API 이다.  (위의 예시를 들어 설명하면 `HTML` 의 요소들을 가지고 실제 웹사이트처럼 구현해내는 것을 `DOM`이라고 간단하게 생각할 수 있다.) 
 
@@ -31,11 +27,11 @@ tags:
 
 * `DOM` 구조를 조회할 때 `console.dir`  이 유용하다.
 
-  
+  <br/>
 
-### DOM 객체의 CRUD
+## DOM 객체의 CRUD
 
-#### CREATE (생성)
+## CREATE (생성)
 
 새롭게 `div element` 를 생성하고 변수에 할당한다. 이때 변화가 없어 보이지만 현재 `div` 를 생성하고 DOM 트리에 연결을 안했기 때문에 그렇다. 이를 연결하기 위해 APPEND 해야한다. 
 
@@ -44,9 +40,9 @@ document.createElement('div')
 const nameDiv = document.createElement('div') 
 ```
 
+<br/>
 
-
-#### APPEND (연결)
+## APPEND (연결)
 
 `append`라는 메서드를 사용하여 변수를 `<body>` 에 넣어준다. `<div>` 요소에 아무 내용도 없어서 아무것도 보이지 않는다.
 
@@ -54,9 +50,9 @@ const nameDiv = document.createElement('div')
 document.body.append(nameDiv)
 ```
 
+<br/>
 
-
-#### READ (조회, 찾기)
+## READ (조회, 찾기)
 
 자바스크립트에서 원시자료형에서 변수의 값을 찾기 위해 변수 명을 조회하고, 참조 자료형에서 배열은 index를 객체는 key를 이용하여 값을 조회할 수 있다. 하지만 DOM으로 HTML 엘리먼트의 정보를 조회하기 위해서는 `querySelector` 의 첫번째 인자로 셀렉터(selector)를 전달하여 확인할 수 있다. 여러 개의 요소를 한 번에 가져오기 위해서는, `querySelectorAll` 을 사용한다. 
 
@@ -73,9 +69,9 @@ const 변수명2 = document.querySelector('#container')
 console.log(변수명1 === 변수명2) // true
 ```
 
+<br/>
 
-
-#### UPDATE (변경, 갱신, 수정)
+## UPDATE (변경, 갱신, 수정)
 
  CREATE, APPEND, READ를 통해 새로운 DOM 객체를 만들고, 기존의 DOM 객체에 붙이고, DOM 객체를 선택해서 조회까지 했다. UPDATE는 `<div>` 태그를 업데이트 하여 내용을 입력한다.
 
@@ -114,9 +110,9 @@ nameDiv.classList.add('nameDiv');	// class="nameDiv"
 console.log(nameDiv) // <div class="nameDiv">kanghyew0n</div>
 ```
 
+<br/>
 
-
-#### DELETE (삭제)
+## DELETE (삭제)
 
 * 삭제하려는 요소의 위치를 알고 있는 경우에 `remove` 메서드를 사용하여 삭제한다. 
 
@@ -152,7 +148,8 @@ nameDivs.forEach((nameDiv) => nameDiv.remove());
  
 
 
-
+<br/>
+<br/>
 
 
 

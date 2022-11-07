@@ -1,12 +1,7 @@
----
-layout: single
-title: "[JavaScript] 객체"
-categories:
-  - javascript
-tags:
-  - 자바스크립트  
-  - 객체  
----
+<br/>
+
+# [JavaScript] 객체
+
 <br/>
 
 ### 객체 
@@ -112,25 +107,5 @@ let person = {
 'add' in person; //false
 ```
 
-<br/><br/><br/>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<br/>
+<br/>

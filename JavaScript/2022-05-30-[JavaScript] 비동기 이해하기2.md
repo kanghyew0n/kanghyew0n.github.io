@@ -1,21 +1,17 @@
----
-layout: single
-title: "[JavaScript] 비동기 이해하기 (2)"
-categories:
-  - javascript
-tags:
-  - 자바스크립트  
-  - 비동기 
-
----
 
 
+<br/>
 
-### 비동기 이해하기 (2)
+# [JavaScript] 비동기 이해하기 (2)
+
+<br/>
+
+
+## 비동기 이해하기 (2)
 
 
 
-#### 목표 
+### 목표 
 
 - callback, Promise, async/await 구현 방법을 이해한다.
 - Promise 실행 함수가 가지고 있는 두 개의 매개변수 `resolve` 와 `reject`를 활용할 수 있다.
@@ -30,7 +26,7 @@ tags:
 
 
 
- #### Promise 실행 함수가 가지고 있는 두 개의 파라미터 resolve 와 reject 는 각각 무엇을 의미하나요?
+ ## Promise 실행 함수가 가지고 있는 두 개의 파라미터 resolve 와 reject 는 각각 무엇을 의미하나요?
 
 실행 함수는 프로미스 구현에 의해 `resolve`와 `reject `함수를 받아 즉시 실행된다. `resolve` 및 `reject `함수는 호출할 때 각각 프로미스를 이행하거나 거부한다. 실행 함수는 보통 어떤 비동기 작업을 시작한 후 모든 작업을 끝내면 `resolve`를 호출해 프로미스를 이행하고, 오류가 발생한 경우 `reject`를 호출해 거부한다. 
 
@@ -49,13 +45,13 @@ tags:
 
 <br/>
 
-####  new Promise()를 통해 생성한 Promise 인스턴스에는 어떤 메서드가 존재하나요? 각각은 어떤 용도인가요?
+##  new Promise()를 통해 생성한 Promise 인스턴스에는 어떤 메서드가 존재하나요? 각각은 어떤 용도인가요?
 
 
 
 <br/>
 
-####  Promise.prototype.then 메서드는 무엇을 리턴하나요?
+##  Promise.prototype.then 메서드는 무엇을 리턴하나요?
 
 `then()` 메서드는 Promise를 리턴하고 두 개의 콜백 함수를 인수로 받는다. 
 
@@ -75,7 +71,7 @@ promise1.then((value) => {
 
 <br/>
 
-####  Promise.prototype.catch 메서드는 무엇을 리턴하나요?
+##  Promise.prototype.catch 메서드는 무엇을 리턴하나요?
 
 `catch()`메서드는 `Promise` 거부된 사례만 반환하고 처리한다. 호출하는 것과 동일하게 동작합한다. 
 
@@ -93,7 +89,7 @@ promise1.catch((error) => {
 <br/>
 
 
-####  Promise의 세 가지 상태는 각각 무엇이며, 어떤 의미를 가지나요?
+##  Promise의 세 가지 상태는 각각 무엇이며, 어떤 의미를 가지나요?
 
 - 대기 (*pending)* : 이행하지도, 거부하지도 않은 초기 상태
 
@@ -134,39 +130,14 @@ getNum().catch((error) => console.log(error));
 
 
 
-####  await 키워드 다음에 등장하는 함수 실행은 어떤 타입을 리턴할 경우에만 의미가 있나요?
+##  await 키워드 다음에 등장하는 함수 실행은 어떤 타입을 리턴할 경우에만 의미가 있나요?
 
 
 <br/>
 
 
-####  await 키워드를 사용할 경우, 어떤 값이 리턴되나요?
+##  await 키워드를 사용할 경우, 어떤 값이 리턴되나요?
 
 <br/>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<br/>
 

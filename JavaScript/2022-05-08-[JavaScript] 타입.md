@@ -1,17 +1,13 @@
----
-layout: single
-title: "[JavaScript] 타입"
-categories:
-  - javascript
-tags:
-  - 자바스크립트  
-  - 타입  
 
----
+<br/>
+
+# [JavaScript] 타입
+
+<br/>
 
 
 
-### 2. 타입 (type)
+## 2. 타입 (type)
 
 JavaScript 언어의 타입은 원시 값과 객체로 나뉜다고 한다. 원시값의 종류는 아래와 같다. (BigInt, Symbol은 다음 기회에..내가 아직 잘 모릅니다)<br/>
 
@@ -25,7 +21,7 @@ JavaScript 언어의 타입은 원시 값과 객체로 나뉜다고 한다. 원�
 
 
 
-#### Number  타입 
+## Number  타입 
 
 이름에서부터 티를 내고있다. 숫자형이라고 <br/>
 
@@ -40,7 +36,7 @@ Infinity
 
 
 
-#### String  타입 
+## String  타입 
 
 String 타입은 텍스트 데이터 즉 문자를 나타낼 때 사용한다. `''` 또는  `""` 로 감싼 값의 타입은 `string` 이 된다.
 
@@ -71,7 +67,7 @@ console.log(str.length) // 5
 
 
 
-#### Boolean 타입 
+## Boolean 타입 
 
 `boolean `타입은 논리요소를 나타내며 `true` 와 `false` 값을 가질 수 있다. 이때 값이 `undefined` 나 `null` 이 아닌 모든 객체는 조건문에서 `true` 값을 가진다. 즉 첫번째 코드의 조건문은 참이 되고, 두번째 코드는 거짓이 된다.
 
@@ -115,13 +111,13 @@ if ("")
 
 
 
-#### Null 타입 
+## Null 타입 
 
 Null 타입은 `null` 하나의 값만 가질 수 있다. `null`은 **의도적으로 변수에 값이 없다는 것을 명시**할 때 사용한다. `null`은 글로벌 객체의 속성에 대한 식별자가 아니다. 대신 `null`은 식별되지 않은 것을 표현한다. 즉, 변수가 아무런 객체를 가리키지 않음을 표현합니다. 또한 JavaScript는 대소문자를 구별하므로 null은 Null,NULL 등과 다르다. 
 
 
 
-#### Undefined 타입 
+## Undefined 타입 
 
 선언한 후 값을 할당하지 않은 변수 혹은 값이 주어지지 않은 인수에 자동으로 `undefined` 가 할당된다. `null` 과의 차이점은 `undefined`은 변수를 선언하고 값을 할당하지 않은 상태, `null`은 변수를 선언하고 빈 값을 할당한 상태(빈 객체)이다. 즉, `undefined`는 자료형이 없는 상태이다. 쉽게 말해서 `null`은 의도적으로 **너는 값이 없어! **라고 하는 것이고 `undefined` 는 **값이 없는데...?** 라고 생각한다.
 
@@ -131,7 +127,7 @@ let x; // 값을 할당하지 않고 변수 선언
 console.log(x) // undefined
 ```
 
-<br/><br/>
+<br/>
 
 
 
@@ -146,5 +142,5 @@ console.log(x) // undefined
 - [Falsy 한 값](https://developer.mozilla.org/ko/docs/Glossary/Falsy) 
 
   
-
+<br/>
 <br/>

@@ -1,13 +1,11 @@
----
-layout: single
-title: "[JavaScript] 비동기 이해하기 (1)"
-categories:
-  - javascript
-tags:
-  - 자바스크립트  
-  - 비동기 
 
----
+
+<br/>
+
+# [JavaScript] 비동기 이해하기 (1)
+
+<br/>
+
 
 
 
@@ -16,15 +14,19 @@ tags:
 자스크립트의 코드를 실행하는 프로그램인 자바스크립트 엔진은 단 하나의 실행 컨텍스트를 스택을 가진다. 실행 컨텍스트? 스택? 너무 어렵지만 함수를 실행할 수 있는 창구가 단 하나다! 라고 생각하면 쉽다. 창구가 단 하나이기 때문에 동시에 여러개의 함수를 실행할 수 없는 것이다. 이 방식을 **싱글 스레드**라고 하는데 하나의 함수를 실행할 때 처리시간동안 다른 함수를 실행하지 못하게 **블로킹(blocking)**을 한다. 
 
 
+<br/>
 
-### blocking VS non-blocking
+
+## blocking VS non-blocking
 
 * `blocking` : 요청 작업이 끝날때까지 다른 작업을 하지 않고 기다림 
 * `non-blocking` : 요청 작업이 수행하는 동안 다른 작업도 수행 가능 
 
 
+<br/>
 
-### 동기(synchronously) VS 비동기 (asynchronously)
+
+## 동기(synchronously) VS 비동기 (asynchronously)
 
 * 동기 (`synchronously`) : 현재 실행중인 태스크가 종료될 때까지 다음 태스크가 대기하는 방식
 
@@ -97,17 +99,8 @@ func1(); // 첫번째 실행 -> 몇번째 실행? -> (1초 뒤) -> 1초 뒤에 �
 ![2598B46D-4070-4442-9381-D04B602FE5E1](https://user-images.githubusercontent.com/104333249/172046503-af302e67-842b-44f4-bdee-93f868b8325d.jpeg)
 
 
-<br/><br/>
-
-
-
-
-
-
-
-
-
-
+<br/>
+<br/>
 
 
 

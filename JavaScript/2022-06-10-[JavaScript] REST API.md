@@ -1,14 +1,12 @@
----
-layout: single
-title: "[네트워크] REST API"
-categories:
-  - 네트워크
-tags:
-  - api  
 
----
 
-### REST API란?
+<br/>
+
+# [JavaScript] REST API
+
+<br/>
+
+## REST API란?
 
 API는 다른 sw시스템과 통신하기 위해 따라야 하는 규칙이다.  `REST API`에서 REST (REpresentational State Transfer)는 API **작동 방식에 대한 조건을 부과**하는 소프트웨어 아키텍처이다!
 
@@ -18,13 +16,16 @@ API는 다른 sw시스템과 통신하기 위해 따라야 하는 규칙이다. 
 
 <br>
 
-### REST API 디자인 방법 (REST 성숙도 모델 RMM)
+## REST API 디자인 방법 (REST 성숙도 모델 RMM)
 
-#### 0단계 : HTTP 사용
+<br>
+
+### 0단계 : HTTP 사용
 
 * HTTP 프로토콜 따르기 
 
-#### 1단계 : 개별 리소스와의 통신 준수 
+<br>
+### 1단계 : 개별 리소스와의 통신 준수 
 
 * 개별 리소스에 맞는 엔드포인트 사용 -> 엔드포인트는 동사가 아닌 명사로 표현한다.
   * 엔드포인트 (Endpoin) : 메소드는 같은 URL들에 대해서도 다른 요청을 하게끔 구별하게 해주는 항목 (ex-1번 00정보)
@@ -32,8 +33,9 @@ API는 다른 sw시스템과 통신하기 위해 따라야 하는 규칙이다. 
 * 요청하고 요청 받는 자원에 대한 정보를 응답으로 전달 
 
 
+<br>
 
-#### 2단계 : HTTP 메소드 원칙 준수 
+### 2단계 : HTTP 메소드 원칙 준수 
 
 * CRUD 에 맞게 적절한 HTTP 메서드 사용
 * `GET` : 데이터를 조회(READ) 하는 데에 사용됨 -> `GET` 으로도 나머지를 표현할 수 있지만 `REST`에 적합하지 않다.
@@ -60,8 +62,9 @@ PATCH /users/1
 ```
 
 
+<br>
 
-#### 3단계 : HATEOAS 원칙 준수 
+### 3단계 : HATEOAS 원칙 준수 
 
 * HATEOAS(Hypertext As The Engine Of Application State)
 * 하이퍼 미디어 컨트롤 적용 ->  하이퍼미디어를 애플리케이션의 상태를 관리하기 위한 매커니즘으로 사용한다는 것

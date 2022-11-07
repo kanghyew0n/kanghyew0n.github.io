@@ -1,14 +1,12 @@
----
-layout: single
-title: "[JavaScript] 브라우저 DOM (2)"
-categories:
-  - DOM
-tags:
-  - DOM
 
----
 
-### DOM 선택하기 
+<br/>
+
+# [JavaScript] 브라우저 DOM (2)
+
+<br/>
+
+## DOM 선택하기 
 
 dom에 대해서 알아보다가 dom을 선택해서 특정 요소를 삭제하거나 텍스트를 변경하는데 궁금한 점이 생겼다. 바로 어떤건 ` getElementById()` 를 사용하기도 하고 다른건 ` getElementByClassName()`을 또 다른건 `querySelector()`을 사용한다는 점이다. 사실 앞에 두개는 ID, ClassName으로 찾는게 확실하게 알겠지만 Selector는 대체 어느 부분에서 적절하게 사용해야하는지 선택자에 대한 의문이 생겼다. 그래서 조금 더 알맞은 방법으로 코드를 짜고싶어서 알아보게 됐다. 
 
@@ -18,7 +16,7 @@ MDN에 검색해보면 선택자들이 굉장히 많이 나온다. (사진엔 `g
 
 
 
-### 1. Document.getElementById()
+## 1. Document.getElementById()
 
 * 찾으려는 요소 ID. ID는 대소문자를 구분하는 문자열로, 문서 내에서 유일해야 한다.  즉, 하나의 값은 하나의 요소만 사용할 수 있다. 
 * ID의 대소문자가 정확해야한다. 
@@ -46,40 +44,3 @@ var elem = document.getElementById('para');
 
 <br>
 <br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

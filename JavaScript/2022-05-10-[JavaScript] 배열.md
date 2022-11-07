@@ -1,12 +1,9 @@
----
-layout: single
-title: "[JavaScript] 배열"
-categories:
-  - javascript
-tags:
-  - 자바스크립트  
-  - 배열  
----
+
+<br/>
+
+# [JavaScript] 배열
+
+<br/>
 
 ### 배열 
 
@@ -182,7 +179,7 @@ word.indexOf('good') // false
 
 
 <br/>
-
+<br/>
 
 
 

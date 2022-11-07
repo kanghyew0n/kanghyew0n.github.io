@@ -1,20 +1,27 @@
-### Props VS State
+<br/>
+
+# [React] Props VS State
+
+<br/>
+
+
+## Props VS State
 
 * props 는 외부로 부터 전달받은 값 (이름, 성별)
 * state  는 내부에서 변화하는 값 (나이, 거주지, 취업여부, 결혼/연애 여부)
 
+<br/>
 
-
-### Props 특징 
+## Props 특징 
 
 * 컴포넌트의 속성 (property) -> 성별이나 이름처럼 **변하지 않는** 외부로부터 전달받은 값, 애플리케이션에서 컴포넌트가 가진 속성에 해당함 
 * 부모 컴포넌트로부터 전달받은 값 
 * 어떠 타입의 값도 넣어 전달할 수 있도록 **객체 형태**이다.
 * 읽기 전용이다 -> 변하지 않는 값이기 때문에 **읽기전용(read-only) 객체**이다.
 
+<br/>
 
-
-### Prop 사용하기 
+## Prop 사용하기 
 
 1. 하위 컴포넌트에 전달하고자 하는 값(data)과 속성을 정의한다.
 2. props를 이용하여 정의된 값과 속성을 전달한다.
@@ -152,9 +159,9 @@ export default App;
 
 ```
 
+<br/>
 
-
-### State
+## State
 
 체크박스 구현 코드 
 
@@ -178,11 +185,11 @@ function CheckboxExample() {
 export default CheckboxExample;
 ```
 
+<br/>
 
+## State hook, useState
 
-### State hook, useState
-
-#### useState 사용법
+### useState 사용법
 
 * `useState` 를 이용하기 위해서는 React로부터 `useState` 를 불러와야 한다. `import` 키워드로 `useState` 를 불러오자 
 
@@ -214,9 +221,9 @@ function CheckboxExample() {
 }
 ```
 
+<br/>
 
-
-#### 체크박스 
+## 체크박스 
 
 ```js
 import React, { useState } from "react";
@@ -242,9 +249,9 @@ export default CheckboxExample;
 
 ```
 
+<br/>
 
-
-#### 입력창에 입력하면 그대로 반영 & 팝업창 뜨게하기 
+## 입력창에 입력하면 그대로 반영 & 팝업창 뜨게하기 
 
 ```js
 function NameForm() {
@@ -271,9 +278,9 @@ export default NameForm;
 
 ```
 
+<br/>
 
-
-#### 드롭바 내용 선택하면 반영되게 하기 
+## 드롭바 내용 선택하면 반영되게 하기 
 
 ```js
 import React, { useState } from "react";
@@ -305,10 +312,10 @@ export default SelectExample;
 ```
 
 
+<br/>
 
 
-
-#### 상태에 따른 모달 창 
+## 상태에 따른 모달 창 
 
 ```js
 vimport React, { useState } from "react";
@@ -347,9 +354,9 @@ export default App;
 
 ```
 
+<br/>
 
-
-### input 값 넣기 
+## input 값 넣기 
 
 ```js
 import "./styles.css";
@@ -385,7 +392,7 @@ export default function App() {
 
 ```
 
-
+<br/>
 
 ```js
 import React, { useState } from "react";
@@ -410,9 +417,9 @@ function SelectFruit() {
 }
 ```
 
+<br/>
 
-
-### 베어 미니멈 가능한 tweets.js
+## 베어 미니멈 가능한 tweets.js
 
 ```js
 import React, { useState } from "react";
@@ -539,4 +546,5 @@ export default Tweets;
 
 
 
-
+<br/>
+<br/>
