@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[Optimistic UI] 낙관적 업데이트"
+title: "[SWR] 낙관적 업데이트"
 categories:
   - UI 
 tags:
