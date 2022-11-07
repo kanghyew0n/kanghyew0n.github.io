@@ -1,14 +1,10 @@
----
-layout: single
-title: "[Optimization] 최적화 기법"
-categories:
-  - 최적화 
-tags:
-  - Tree Shaking   
-  - Lighthouse  
 
----
+<br/>
 
+
+# [Optimization] 최적화 기법
+[1. google 번역 ](#1-google-번역) <br/>
+[2. 파파고](#2-파파고)<br/>
 
 
 
