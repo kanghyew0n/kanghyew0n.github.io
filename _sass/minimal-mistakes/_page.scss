@@ -44,7 +44,8 @@ body {
 
   @include breakpoint($x-large) {
     width: calc(100% - #{$right-sidebar-width});
-    padding-right: $right-sidebar-width;
+    // padding-right: $right-sidebar-width;
+    padding-right: 100px;
   }
 
   .page__inner-wrap {
@@ -90,7 +91,9 @@ body {
 .page__content {
   h2 {
     padding-bottom: 0.5em;
-    border-bottom: 1px solid $border-color;
+    // border-bottom: 1px solid $border-color;
+    border-bottom: 1px solid #eee;
+
   }
 
 	h1, h2, h3, h4, h5, h6 {
@@ -113,7 +116,9 @@ body {
   p,
   li,
   dl {
-    font-size: 1em;
+    // font-size: 1em;
+    font-size: 0.8rem;
+
   }
 
   /* paragraph indents */
@@ -143,7 +148,8 @@ body {
     padding-top: 0.1rem;
     padding-bottom: 0.1rem;
     font-size: 0.8em;
-    background: $code-background-color;
+    // background: $code-background-color;
+    background: #eee;
     border-radius: $border-radius;
 
     &::before,
