@@ -1,7 +1,9 @@
 # 🚀 JavaScript에서 TypeScript로 마이그레이션 하기!
 
 프로젝트로 진행한 Community 사이트의 배포를 heroku로 진행했었는데 유료 배포로 바뀌었다ㅜㅜ 그래서 새로 배포를 진행하게 되면서 javascript에서 typescript로 마이그레이션을 진행하려고 한다!
-우선 가장 먼저 할 일! 패키지 설치를 해야한다.
+우선 가장 먼저 할 일! 패키지 설치를 해야한다. <br/>
+
+[Community 깃허브 페이지 보러가 →](https://github.com/kanghyew0n/Toy-Community)
 
 <br/>
 
@@ -51,5 +53,12 @@ npx tsc --init
 * 자신이 사용하고자 하는 이벤트에 마우스를 올리면 쉽게 확인할 수 있다!
 
 <br/>
+<br/>
 
+뿌듯하구만! 
+
+
+
+<br/>
+<br/>
 
